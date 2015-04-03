@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Android Wear works with iPhone/iOS
 Original Code: https://github.com/shiitakeo/android_wear_for_ios
 ===================================
