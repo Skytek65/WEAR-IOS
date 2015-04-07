@@ -135,10 +135,6 @@ public class BLEService extends Service{
         is_connect = false;
         is_subscribed_characteristics = false;
 
-        vib = (Vibrator)getSystemService(VIBRATOR_SERVICE);
-        notificationManager = NotificationManagerCompat.from(getApplicationContext());
-        packet_processor = new PacketProcessor();
-        icon_image_manager = new IconImageManager();
 
         // Initializes a Bluetooth adapter.  For API level 18 and above, get a reference to
         // BluetoothAdapter through BluetoothManager.
@@ -415,6 +411,12 @@ public class BLEService extends Service{
                     intent.putExtra(ConfirmationActivity.EXTRA_MESSAGE, "success");
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
+
+                    Intent startMain = new Intent(Intent.ACTION_MAIN);
+                    startMain.addCategory(Intent.CATEGORY_HOME);
+                    startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
+                    startActivity(startMain);
                 }
             }else if(status == BluetoothGatt.GATT_WRITE_NOT_PERMITTED) {
                 Log.d(TAG_LOG, "status: write not permitted");
@@ -450,7 +452,8 @@ public class BLEService extends Service{
                 if(packet_processor.is_finish_processing()){
                     int app_logo = icon_image_manager.get_image_index(packet_processor.get_ds_app_id());
 
-                    Bitmap large_icon = BitmapFactory.decodeResource(getResources(), app_logo);
+                    int background = icon_image_manager.get_image_background(packet_processor.get_ds_app_id());
+                    Bitmap large_icon = BitmapFactory.decodeResource(getResources(), background);
                     Log.d(TAG_LOG, "in title: notification");
 
                     //create perform notification action pending_intent
