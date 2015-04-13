@@ -8,8 +8,12 @@ This app get notification using ANCS from iphone. No jailbreak or root needed
 
 Latest version
 --------------
+0.3 BETA: See Release notes on release page
+-------------------------------------------
+
 0.2 BETA: See release notes on release page
----------
+-------------------------------------------
+
 0.1 BETA:
 ---------
 This version is the latest version of the original developers( V 0.31), with a few tweaks and motifications 
