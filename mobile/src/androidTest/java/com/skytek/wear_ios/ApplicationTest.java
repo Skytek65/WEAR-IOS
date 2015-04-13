@@ -1,4 +1,4 @@
-package com.shiitakeo.android_wear_for_ios;
+package com.skytek.wear_ios;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

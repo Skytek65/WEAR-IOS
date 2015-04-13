@@ -1,4 +1,4 @@
-package com.shiitakeo.android_wear_for_ios;
+package com.skytek.wear_ios;
 
 /**
  * Created by kusabuka on 15/03/15.
@@ -23,6 +23,8 @@ public class IconImageManager {
     private static final int delivered = R.drawable.delivered;
     private static final int ebay = R.drawable.ebay;
     private static final int kik = R.drawable.kik;
+    private static final int bible = R.drawable.bible;
+    private static final int slotomania = R.drawable.slotomania;
 
 
     private static final int app_iconbg = R.drawable.ic_launcher;
@@ -44,6 +46,8 @@ public class IconImageManager {
     private static final int deliveredbg = R.drawable.delivered;
     private static final int ebaybg = R.drawable.ebaybg;
     private static final int kikbg = R.drawable.kikbg;
+    private static final int biblebg = R.drawable.biblebg;
+    private static final int slotomaniabg = R.drawable.slotomaniabg;
 
     IconImageManager(){
 
@@ -91,6 +95,10 @@ public class IconImageManager {
                 return ebay;
             case "com.kik.chatKik":
                 return kik;
+            case "tv.lifechurch.bible":
+                return bible;
+            case "com.playtika.slotomania":
+                return slotomania;
             default:
                 return app_icon;
         }
@@ -135,6 +143,10 @@ public class IconImageManager {
                 return ebaybg;
             case "com.kik.chatKik":
                 return kikbg;
+            case "tv.lifechurch.bible":
+                return biblebg;
+            case "com.playtika.slotomania":
+                return slotomaniabg;
             default:
                 return app_iconbg;
         }

@@ -1,4 +1,4 @@
-package com.shiitakeo.android_wear_for_ios;
+package com.skytek.wear_ios;
 
 import android.annotation.TargetApi;
 import android.app.PendingIntent;
@@ -31,7 +31,6 @@ import android.os.PowerManager;
 import android.os.Vibrator;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
-import android.support.v4.content.LocalBroadcastManager;
 import android.support.wearable.activity.ConfirmationActivity;
 import android.util.Log;
 
